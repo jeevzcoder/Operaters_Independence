@@ -1,13 +1,16 @@
 package com.example.demo.Repositories;
-import com.example.demo.Models.FTO;
+import com.example.demo.Models.Oi;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.query.JpaParameters;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface FtoRepo extends JpaRepository<FTO, Long> {
+public interface OiRepo extends JpaRepository<Oi, Long> {
+
+
     @Override
-    Optional<FTO> findById(Long aLong);
+   List<Oi>  findAll();
+    Oi save(Oi oi);
 }

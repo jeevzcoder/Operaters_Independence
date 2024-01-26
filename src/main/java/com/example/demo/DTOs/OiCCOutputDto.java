@@ -12,13 +12,11 @@ import java.util.List;
 @Getter
 @Setter
 @Component
-public class FtoCCOutputDto {
-    private String FtoName;
+public class OiCCOutputDto {
+    private String oIName;
     private Date dateOfLastCompletion;
-    private Date date;
+    private Date startingDate;
     private Integer totalChanges;
     private List<Patent> newPatents;
     private List<Patent> statusChangePatents;
-
-
 }

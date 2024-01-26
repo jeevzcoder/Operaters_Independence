@@ -13,9 +13,17 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-public class FTO extends SuperClass{
+public class Oi extends BaseClass {
     private String Name;
-    private Date dateOfCompletion;
+    /*@OneToOne
+    private Query query;
+    @OneToMany
+    private List<AssetTeam> aTeam;
+    @OneToMany
+    private List<Searcher> searchers;
+    @OneToMany
+    private List<Patent> patents;*/
+
 
 
 

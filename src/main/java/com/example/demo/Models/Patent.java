@@ -9,9 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Patent extends SuperClass{
+public class Patent extends BaseClass {
     @ManyToOne
-    private FTO fto;
+    private Oi oi;
     private String patId;
     private String assignee;
     private String patentNumber;

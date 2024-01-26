@@ -38,7 +38,7 @@ public class GetPatentsFromApi {
     private String apiKey;
 
     @Value("${api.host}")
-    private String apiHost ;//="global-patent1.p.rapidapi.com";
+    private String apiHost ;
 
     private List<Patent> convertDtoPatentsToPatents(ApiResponseDto responseDto){
         List<ApiPatentsDto> resposePatents=responseDto.getPatents();
