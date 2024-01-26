@@ -30,26 +30,11 @@ public class OiController {
 
     @GetMapping("/{inputDto}")
     public ResponseEntity<List<OiCCOutputDto>> detectChanges(@PathVariable("inputDto") Long inputDto) throws Exception{
-        //List<OiCCOutputDto> response =new ArrayList<>();
-        //return oiService.detectChanges(inputDto);
+        
         ResponseEntity<List<OiCCOutputDto>> response=new ResponseEntity<>(oiService.detectChanges(inputDto), HttpStatus.OK);
         return response;
-        /*for(Oi oi: responseOi){
-            OiCCOutputDto outputDto=new OiCCOutputDto();
-            outputDto.setNewPatents(oi.getPatents());
-            outputDto.setOIName(oi.getName());
-            outputDto.setDateOfLastCompletion(new Date());
-            outputDto.setTotalChanges(oi.getPatents().size());
-            response.add(outputDto);
-        }
-        return response;*/
+        
 
 
-        //return oiService.detectChanges(inputDto);
-        //FtoCCOutputDto outputDto =new FtoCCOutputDto();
-        //outputDto.setNewPatents(pat);
-        //System.out.println(pat);
-        //return outputDto;
-        //return null;
     }
 }
