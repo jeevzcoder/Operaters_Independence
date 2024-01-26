@@ -9,9 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Searcher extends SuperClass{
+public class Searcher extends BaseClass {
+    @ManyToOne
+    private Oi oi;
     private String name;
     private String emailId;
-    @OneToOne
-    private FTO fto;
 }

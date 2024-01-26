@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 @Component
-public class FtoCCInputDto {
+public class OiCCInputDto {
     private Long id;
 }

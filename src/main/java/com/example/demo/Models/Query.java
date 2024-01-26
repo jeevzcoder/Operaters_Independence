@@ -1,6 +1,7 @@
 package com.example.demo.Models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,8 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Query extends SuperClass{
+public class Query extends BaseClass {
+
     private String query;
     @OneToOne
-    private FTO fto;
+    private Oi oi;
 }
